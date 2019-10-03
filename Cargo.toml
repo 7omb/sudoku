@@ -2,8 +2,16 @@
 name = "sudoku"
 version = "0.1.0"
 authors = ["Tom Bärwinkel <dev@baerwinkel.org>"]
+license = "MIT"
+repository = "https://github.com/7omb/sudoku"
 edition = "2018"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
+varisat = "0.2.1"
+
+[dev-dependencies]
+criterion = "0.3.0"
+
+[[bench]]
+name = "95_hard_sudokus"
+harness = false
